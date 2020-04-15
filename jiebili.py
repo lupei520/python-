@@ -34,6 +34,7 @@ class axe:
             self.important=float(self.b*self.c)
             self.d=float(self.important/self.a)
             print('X等于:',self.d)
+        self.time.sleep(10)
     def fenshu(self):
         from fractions import Fraction
         super_big_ask=input('a:b=c:d中谁是x:')
@@ -70,7 +71,7 @@ class axe:
                 self.a_part1=int(input('请输入第一个比例的前项的分子:'))
                 self.a_part2=int(input('请输入第一个比例的前项的分母:'))
                 self.a=Fraction(self.a_part1,self.a_part2)
-            elif self.bask=='不是' or self.bask=='否' or self.bask=='No':
+            elif self.aask=='不是' or self.aask=='否' or self.aask=='No':
                 self.a=float(input('请输入第一个比的前项的值:'))
             self.cask=input('请输入c是否为分数:')
             if self.cask=='是':
@@ -97,7 +98,7 @@ class axe:
                 self.a_part1=int(input('请输入第一个比例的前项的分子:'))
                 self.a_part2=int(input('请输入第一个比例的前项的分母:'))
                 self.a=Fraction(self.a_part1,self.a_part2)
-            elif self.bask=='不是' or self.bask=='否':
+            elif self.aask=='不是' or self.aask=='否':
                 self.a=float(input('请输入第一个比的前项的值:'))
             self.bask=input('请输入b是否为分数:')
             if self.bask=='是':
@@ -112,7 +113,7 @@ class axe:
                 self.d_part2=int(input('请输入第二个比例的后项的分母:'))
                 self.d=Fraction(self.d_part1,self.d_part2)
             elif self.dask=='否' or self.dask=='不是':
-                self.d=float(input('请输入第二个比的前项的值:'))
+                self.d=float(input('请输入第二个比的后项的值:'))
             self.important=self.a*self.d
             self.c=self.important/self.b
             print('X等于(小数形式):',self.c)
@@ -124,7 +125,7 @@ class axe:
                 self.a_part1=int(input('请输入第一个比例的前项的分子:'))
                 self.a_part2=int(input('请输入第一个比例的前项的分母:'))
                 self.a=Fraction(self.a_part1,self.a_part2)
-            elif self.bask=='不是' or self.bask=='否':
+            elif self.aask=='不是' or self.aask=='否':
                 self.a=float(input('请输入第一个比的前项的值:'))
             self.bask=input('请输入b是否为分数:')
             if self.bask=='是':
